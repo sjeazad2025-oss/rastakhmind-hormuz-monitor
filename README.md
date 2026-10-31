@@ -14,7 +14,17 @@ The normative chain is:
 
 `EXTERNAL DATA → EVIDENCE LAYER → MODEL INPUTS → SIMULATION → MODEL OUTPUT → SCENARIO FORECAST → EXTERNAL/HUMAN VALIDATION`
 
-See [`docs/METHODOLOGICAL-UPDATE-2026-10-31.md`](docs/METHODOLOGICAL-UPDATE-2026-10-31.md) for the accepted methodological validation record.
+See [`docs/METHODOLOGICAL-UPDATE-2026-10-31.md`](docs/METHODOLOGICAL-UPDATE-2026-10-31.md) for the methodological validation record.
+
+## Empirical validation gate
+
+A stronger scientific claim requires more than documentation of model outputs. The repository now defines a reproducible validation path:
+
+`DOCUMENTED → REPRODUCIBLE → BACKTESTED → HOLDOUT-TESTED → INDEPENDENTLY REPRODUCED → EMPIRICALLY VALIDATED`
+
+The full protocol is documented in [`docs/EMPIRICAL-VALIDATION-PROTOCOL-v1.0.md`](docs/EMPIRICAL-VALIDATION-PROTOCOL-v1.0.md).
+
+The current status is deliberately **NOT YET EMPIRICALLY VALIDATED** until a frozen dataset, executable validation harness, chronological backtest, locked holdout evaluation, baseline comparison, statistical scoring, and independent reproduction are completed.
 
 ## Current monitoring scope
 
@@ -31,4 +41,4 @@ See [`reports/2026-10-31-hormuz-daily-monitor.md`](reports/2026-10-31-hormuz-dai
 
 ## Research-status note
 
-The numerical continuity of a recorded simulation state is **not, by itself, empirical validation** of the model formulation, parameter calibration, or future-world assumptions. External claims remain subject to source quality, coverage, timestamp, geographic scope, and independent corroboration.
+The numerical continuity of a recorded simulation state is **not, by itself, empirical validation** of the model formulation, parameter calibration, or future-world assumptions. A validated claim must be bounded to the tested data domain, forecast horizon, model version, and evaluation protocol.
